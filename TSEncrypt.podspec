@@ -23,7 +23,20 @@ Pod::Spec.new do |s|
   s.source_files  = "TSEncryptHandler/*.{h,swift}","TSEncryptHandler/SwiftyAES/*.swift"
   #s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
-  s.prefix_header_contents = '#import "TSEncrypt.h"'   #'#import <CommonCrypto/CommonCryptor.h>','#import <CommonCrypto/CommonDigest.h>'
+  #s.module_map = 'CocoaPods/module.modulemap'
+  s.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/TSEncrypt/CommonCrypto' }
+  s.preserve_paths = 'CommonCrypto/module.modulemap'
+  #s.pod_target_xcconfig = {
+   # 'SWIFT_INCLUDE_PATHS[sdk=macosx*]'           => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*',
+   # 'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*',
+   #'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*',
+   # 'SWIFT_INCLUDE_PATHS[sdk=appletvos*]'        => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*',
+   # 'SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]' => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*',
+   # 'SWIFT_INCLUDE_PATHS[sdk=watchos*]'          => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*',
+   # 'SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]'   => '$(PODS_ROOT)/TSEncrypt/CocoaPods/*'
+#}
+
+
   s.requires_arc = true
   s.dependency "SwiftyRSA"
 end
