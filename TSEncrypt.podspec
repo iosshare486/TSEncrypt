@@ -17,8 +17,10 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "yuchenH" => "huangyuchen@caiqr.com" }
  
-  s.source       = { :git => "git@gitlab.caiqr.com:ios_module/TSEncrypt.git", :tag => s.version }
-  s.source_files  = "TSEncrypt/TSEncryptHandler/"
+
+  s.swift_version = "4.1"
+  s.source       = { :git => "http://gitlab.caiqr.com/zhangjunjie/ExchangePodSpecs.git", :tag => s.version }
+  s.source_files  = "TSEncrypt/TSEncryptHandler/*.{h,swift}","TSEncrypt/TSEncryptHandler/SwiftyAES/*.swift"
   #s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
   s.requires_arc = true
