@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16BDD2DFB09F690A6E6DC36E /* Pods_TSEncryptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338A5668D5733FD908D0A6AA /* Pods_TSEncryptUITests.framework */; };
 		3B70D3BA20DA06C6007D2770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70D3B920DA06C6007D2770 /* AppDelegate.swift */; };
 		3B70D3BC20DA06C6007D2770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70D3BB20DA06C6007D2770 /* ViewController.swift */; };
 		3B70D3BF20DA06C6007D2770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B70D3BD20DA06C6007D2770 /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		3B70D3C420DA06C8007D2770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B70D3C220DA06C8007D2770 /* LaunchScreen.storyboard */; };
 		3B70D3CF20DA06C8007D2770 /* TSEncryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70D3CE20DA06C8007D2770 /* TSEncryptTests.swift */; };
 		3B70D3DA20DA06C8007D2770 /* TSEncryptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70D3D920DA06C8007D2770 /* TSEncryptUITests.swift */; };
+		3BC99D2720DB4BE100E9F268 /* TSEncryptHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */; };
+		3BC99D2B20DB4E9300E9F268 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2920DB4E9300E9F268 /* AES.swift */; };
+		3BC99D2C20DB4E9300E9F268 /* SecrecyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */; };
+		3BC99D2F20DB5FF200E9F268 /* TSMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */; };
+		ABC4175009A38B1386D43092 /* Pods_TSEncrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC243509C291C89D88DFB7AF /* Pods_TSEncrypt.framework */; };
+		BB71D69C71042192A0D8B50D /* Pods_TSEncryptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E055221AF9528E7D1F73539 /* Pods_TSEncryptTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		338A5668D5733FD908D0A6AA /* Pods_TSEncryptUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSEncryptUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B70D3B620DA06C6007D2770 /* TSEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B70D3B920DA06C6007D2770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B70D3BB20DA06C6007D2770 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,20 @@
 		3B70D3D520DA06C8007D2770 /* TSEncryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSEncryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B70D3D920DA06C8007D2770 /* TSEncryptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEncryptUITests.swift; sourceTree = "<group>"; };
 		3B70D3DB20DA06C8007D2770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEncryptHandler.swift; sourceTree = "<group>"; };
+		3BC99D2920DB4E9300E9F268 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecrecyExtension.swift; sourceTree = "<group>"; };
+		3BC99D2D20DB536C00E9F268 /* TSEncrypt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSEncrypt-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMD5.swift; sourceTree = "<group>"; };
+		3BC99D3020DB7BF500E9F268 /* TSEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEncrypt.h; sourceTree = "<group>"; };
+		62B098D7E4C4F49D12A1B656 /* Pods-TSEncryptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncryptTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncryptTests/Pods-TSEncryptTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C86ADF81F7AD8EDF364EB8B /* Pods-TSEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt.release.xcconfig"; sourceTree = "<group>"; };
+		9E055221AF9528E7D1F73539 /* Pods_TSEncryptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSEncryptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F354B441D2CCBE4BCB15E83 /* Pods-TSEncrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		AE5D21DB241763295DFEF088 /* Pods-TSEncryptTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncryptTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncryptTests/Pods-TSEncryptTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1E1FF05FB8C5D35DF51CA35 /* Pods-TSEncryptUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncryptUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncryptUITests/Pods-TSEncryptUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC243509C291C89D88DFB7AF /* Pods_TSEncrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSEncrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA7FEC872000187922FC066 /* Pods-TSEncryptUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncryptUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncryptUITests/Pods-TSEncryptUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC4175009A38B1386D43092 /* Pods_TSEncrypt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB71D69C71042192A0D8B50D /* Pods_TSEncryptTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BDD2DFB09F690A6E6DC36E /* Pods_TSEncryptUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +102,13 @@
 		3B70D3AD20DA06C6007D2770 = {
 			isa = PBXGroup;
 			children = (
+				3B70D3E720DA0734007D2770 /* TSEncryptHandler */,
 				3B70D3B820DA06C6007D2770 /* TSEncrypt */,
 				3B70D3CD20DA06C8007D2770 /* TSEncryptTests */,
 				3B70D3D820DA06C8007D2770 /* TSEncryptUITests */,
 				3B70D3B720DA06C6007D2770 /* Products */,
+				4F47975776366FE8033427BA /* Pods */,
+				DC747183FA5D0C87B57A7C30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +131,7 @@
 				3B70D3C020DA06C8007D2770 /* Assets.xcassets */,
 				3B70D3C220DA06C8007D2770 /* LaunchScreen.storyboard */,
 				3B70D3C520DA06C8007D2770 /* Info.plist */,
+				3BC99D2D20DB536C00E9F268 /* TSEncrypt-Bridging-Header.h */,
 			);
 			path = TSEncrypt;
 			sourceTree = "<group>";
@@ -125,6 +154,49 @@
 			path = TSEncryptUITests;
 			sourceTree = "<group>";
 		};
+		3B70D3E720DA0734007D2770 /* TSEncryptHandler */ = {
+			isa = PBXGroup;
+			children = (
+				3BC99D2820DB4E9300E9F268 /* SwiftyAES */,
+				3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */,
+				3BC99D3020DB7BF500E9F268 /* TSEncrypt.h */,
+				3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */,
+			);
+			path = TSEncryptHandler;
+			sourceTree = "<group>";
+		};
+		3BC99D2820DB4E9300E9F268 /* SwiftyAES */ = {
+			isa = PBXGroup;
+			children = (
+				3BC99D2920DB4E9300E9F268 /* AES.swift */,
+				3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */,
+			);
+			path = SwiftyAES;
+			sourceTree = "<group>";
+		};
+		4F47975776366FE8033427BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F354B441D2CCBE4BCB15E83 /* Pods-TSEncrypt.debug.xcconfig */,
+				6C86ADF81F7AD8EDF364EB8B /* Pods-TSEncrypt.release.xcconfig */,
+				62B098D7E4C4F49D12A1B656 /* Pods-TSEncryptTests.debug.xcconfig */,
+				AE5D21DB241763295DFEF088 /* Pods-TSEncryptTests.release.xcconfig */,
+				C1E1FF05FB8C5D35DF51CA35 /* Pods-TSEncryptUITests.debug.xcconfig */,
+				EDA7FEC872000187922FC066 /* Pods-TSEncryptUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC747183FA5D0C87B57A7C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC243509C291C89D88DFB7AF /* Pods_TSEncrypt.framework */,
+				9E055221AF9528E7D1F73539 /* Pods_TSEncryptTests.framework */,
+				338A5668D5733FD908D0A6AA /* Pods_TSEncryptUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B70D3DE20DA06C8007D2770 /* Build configuration list for PBXNativeTarget "TSEncrypt" */;
 			buildPhases = (
+				5966FA9EB7684DDB296981BE /* [CP] Check Pods Manifest.lock */,
 				3B70D3B220DA06C6007D2770 /* Sources */,
 				3B70D3B320DA06C6007D2770 /* Frameworks */,
 				3B70D3B420DA06C6007D2770 /* Resources */,
+				A355FAE11FD13D448C87A188 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B70D3E120DA06C8007D2770 /* Build configuration list for PBXNativeTarget "TSEncryptTests" */;
 			buildPhases = (
+				B85865FEE32EB4778BA30EEA /* [CP] Check Pods Manifest.lock */,
 				3B70D3C620DA06C8007D2770 /* Sources */,
 				3B70D3C720DA06C8007D2770 /* Frameworks */,
 				3B70D3C820DA06C8007D2770 /* Resources */,
@@ -167,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B70D3E420DA06C8007D2770 /* Build configuration list for PBXNativeTarget "TSEncryptUITests" */;
 			buildPhases = (
+				AA8A8411917C25B6DE6F2A17 /* [CP] Check Pods Manifest.lock */,
 				3B70D3D120DA06C8007D2770 /* Sources */,
 				3B70D3D220DA06C8007D2770 /* Frameworks */,
 				3B70D3D320DA06C8007D2770 /* Resources */,
@@ -251,13 +327,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5966FA9EB7684DDB296981BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSEncrypt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A355FAE11FD13D448C87A188 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA8A8411917C25B6DE6F2A17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSEncryptUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B85865FEE32EB4778BA30EEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TSEncryptTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B70D3B220DA06C6007D2770 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3B70D3BC20DA06C6007D2770 /* ViewController.swift in Sources */,
+				3BC99D2B20DB4E9300E9F268 /* AES.swift in Sources */,
 				3B70D3BA20DA06C6007D2770 /* AppDelegate.swift in Sources */,
+				3BC99D2F20DB5FF200E9F268 /* TSMD5.swift in Sources */,
+				3BC99D2C20DB4E9300E9F268 /* SecrecyExtension.swift in Sources */,
+				3BC99D2720DB4BE100E9F268 /* TSEncryptHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +583,7 @@
 		};
 		3B70D3DF20DA06C8007D2770 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F354B441D2CCBE4BCB15E83 /* Pods-TSEncrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +594,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.caiqr.paul.TSEncrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TSEncrypt/TSEncrypt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,6 +602,7 @@
 		};
 		3B70D3E020DA06C8007D2770 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C86ADF81F7AD8EDF364EB8B /* Pods-TSEncrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +613,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.caiqr.paul.TSEncrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TSEncrypt/TSEncrypt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +621,7 @@
 		};
 		3B70D3E220DA06C8007D2770 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B098D7E4C4F49D12A1B656 /* Pods-TSEncryptTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +642,7 @@
 		};
 		3B70D3E320DA06C8007D2770 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5D21DB241763295DFEF088 /* Pods-TSEncryptTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +663,7 @@
 		};
 		3B70D3E520DA06C8007D2770 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E1FF05FB8C5D35DF51CA35 /* Pods-TSEncryptUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +683,7 @@
 		};
 		3B70D3E620DA06C8007D2770 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA7FEC872000187922FC066 /* Pods-TSEncryptUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
