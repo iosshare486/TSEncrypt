@@ -23,5 +23,7 @@ Pod::Spec.new do |s|
   s.source_files  = "TSEncryptHandler/*.{h,swift}","TSEncryptHandler/SwiftyAES/*.swift"
   #s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
+  s.prefix_header_contents = '#import "TSEncrypt.h"'   #'#import <CommonCrypto/CommonCryptor.h>','#import <CommonCrypto/CommonDigest.h>'
   s.requires_arc = true
+  s.dependency "SwiftyRSA"
 end

@@ -60,7 +60,6 @@
 		3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecrecyExtension.swift; sourceTree = "<group>"; };
 		3BC99D2D20DB536C00E9F268 /* TSEncrypt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSEncrypt-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMD5.swift; sourceTree = "<group>"; };
-		3BC99D3020DB7BF500E9F268 /* TSEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEncrypt.h; sourceTree = "<group>"; };
 		62B098D7E4C4F49D12A1B656 /* Pods-TSEncryptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncryptTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncryptTests/Pods-TSEncryptTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C86ADF81F7AD8EDF364EB8B /* Pods-TSEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt.release.xcconfig"; sourceTree = "<group>"; };
 		9E055221AF9528E7D1F73539 /* Pods_TSEncryptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSEncryptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +158,6 @@
 			children = (
 				3BC99D2820DB4E9300E9F268 /* SwiftyAES */,
 				3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */,
-				3BC99D3020DB7BF500E9F268 /* TSEncrypt.h */,
 				3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */,
 			);
 			path = TSEncryptHandler;
