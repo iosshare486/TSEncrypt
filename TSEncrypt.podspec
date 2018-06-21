@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "yuchenH" => "huangyuchen@caiqr.com" }
  
-  s.source       = { :git => "http://gitlab.caiqr.com/ios_module/TSUtility.git", :tag => s.version }
+  s.source       = { :git => "git@gitlab.caiqr.com:ios_module/TSEncrypt.git", :tag => s.version }
   s.source_files  = "TSEncrypt/TSEncryptHandler/"
   #s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
