@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = "4.1"
   s.source       = { :git => "http://gitlab.caiqr.com/zhangjunjie/ExchangePodSpecs.git", :tag => s.version }
-  s.source_files  = "TSEncrypt/TSEncryptHandler/*.{h,swift}","TSEncrypt/TSEncryptHandler/SwiftyAES/*.swift"
+  s.source_files  = "TSEncryptHandler/*.{h,swift}","TSEncryptHandler/SwiftyAES/*.swift"
   #s.exclude_files = "Classes/Exclude"
   s.framework  = "Foundation"
   s.requires_arc = true
