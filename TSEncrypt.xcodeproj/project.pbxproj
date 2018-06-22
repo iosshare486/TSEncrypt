@@ -13,11 +13,8 @@
 		3B70D3BF20DA06C6007D2770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B70D3BD20DA06C6007D2770 /* Main.storyboard */; };
 		3B70D3C120DA06C8007D2770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B70D3C020DA06C8007D2770 /* Assets.xcassets */; };
 		3B70D3C420DA06C8007D2770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B70D3C220DA06C8007D2770 /* LaunchScreen.storyboard */; };
-		3B70D3CF20DA06C8007D2770 /* TSEncryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70D3CE20DA06C8007D2770 /* TSEncryptTests.swift */; };
 		3B70D3DA20DA06C8007D2770 /* TSEncryptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70D3D920DA06C8007D2770 /* TSEncryptUITests.swift */; };
 		3BC99D2720DB4BE100E9F268 /* TSEncryptHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */; };
-		3BC99D2B20DB4E9300E9F268 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2920DB4E9300E9F268 /* AES.swift */; };
-		3BC99D2C20DB4E9300E9F268 /* SecrecyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */; };
 		3BC99D2F20DB5FF200E9F268 /* TSMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */; };
 		ABC4175009A38B1386D43092 /* Pods_TSEncrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC243509C291C89D88DFB7AF /* Pods_TSEncrypt.framework */; };
 		BB71D69C71042192A0D8B50D /* Pods_TSEncryptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E055221AF9528E7D1F73539 /* Pods_TSEncryptTests.framework */; };
@@ -40,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3BC99D5020DBB46300E9F268 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		338A5668D5733FD908D0A6AA /* Pods_TSEncryptUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSEncryptUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B70D3B620DA06C6007D2770 /* TSEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,16 +60,14 @@
 		3B70D3C320DA06C8007D2770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B70D3C520DA06C8007D2770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B70D3CA20DA06C8007D2770 /* TSEncryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSEncryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B70D3CE20DA06C8007D2770 /* TSEncryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEncryptTests.swift; sourceTree = "<group>"; };
-		3B70D3D020DA06C8007D2770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B70D3D520DA06C8007D2770 /* TSEncryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSEncryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B70D3D920DA06C8007D2770 /* TSEncryptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEncryptUITests.swift; sourceTree = "<group>"; };
 		3B70D3DB20DA06C8007D2770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEncryptHandler.swift; sourceTree = "<group>"; };
-		3BC99D2920DB4E9300E9F268 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
-		3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecrecyExtension.swift; sourceTree = "<group>"; };
 		3BC99D2D20DB536C00E9F268 /* TSEncrypt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSEncrypt-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMD5.swift; sourceTree = "<group>"; };
+		3BC99D4520DBB46300E9F268 /* TSEncryptFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEncryptFrameTests.swift; sourceTree = "<group>"; };
+		3BC99D4720DBB46300E9F268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B098D7E4C4F49D12A1B656 /* Pods-TSEncryptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncryptTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncryptTests/Pods-TSEncryptTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C86ADF81F7AD8EDF364EB8B /* Pods-TSEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSEncrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt.release.xcconfig"; sourceTree = "<group>"; };
 		9E055221AF9528E7D1F73539 /* Pods_TSEncryptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSEncryptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,8 +111,8 @@
 			children = (
 				3B70D3E720DA0734007D2770 /* TSEncryptHandler */,
 				3B70D3B820DA06C6007D2770 /* TSEncrypt */,
-				3B70D3CD20DA06C8007D2770 /* TSEncryptTests */,
 				3B70D3D820DA06C8007D2770 /* TSEncryptUITests */,
+				3BC99D4420DBB46300E9F268 /* TSEncryptFrameTests */,
 				3B70D3B720DA06C6007D2770 /* Products */,
 				4F47975776366FE8033427BA /* Pods */,
 				DC747183FA5D0C87B57A7C30 /* Frameworks */,
@@ -135,15 +143,6 @@
 			path = TSEncrypt;
 			sourceTree = "<group>";
 		};
-		3B70D3CD20DA06C8007D2770 /* TSEncryptTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B70D3CE20DA06C8007D2770 /* TSEncryptTests.swift */,
-				3B70D3D020DA06C8007D2770 /* Info.plist */,
-			);
-			path = TSEncryptTests;
-			sourceTree = "<group>";
-		};
 		3B70D3D820DA06C8007D2770 /* TSEncryptUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,20 +155,19 @@
 		3B70D3E720DA0734007D2770 /* TSEncryptHandler */ = {
 			isa = PBXGroup;
 			children = (
-				3BC99D2820DB4E9300E9F268 /* SwiftyAES */,
 				3BC99D2620DB4BE100E9F268 /* TSEncryptHandler.swift */,
 				3BC99D2E20DB5FF200E9F268 /* TSMD5.swift */,
 			);
 			path = TSEncryptHandler;
 			sourceTree = "<group>";
 		};
-		3BC99D2820DB4E9300E9F268 /* SwiftyAES */ = {
+		3BC99D4420DBB46300E9F268 /* TSEncryptFrameTests */ = {
 			isa = PBXGroup;
 			children = (
-				3BC99D2920DB4E9300E9F268 /* AES.swift */,
-				3BC99D2A20DB4E9300E9F268 /* SecrecyExtension.swift */,
+				3BC99D4520DBB46300E9F268 /* TSEncryptFrameTests.swift */,
+				3BC99D4720DBB46300E9F268 /* Info.plist */,
 			);
-			path = SwiftyAES;
+			path = TSEncryptFrameTests;
 			sourceTree = "<group>";
 		};
 		4F47975776366FE8033427BA /* Pods */ = {
@@ -207,6 +205,7 @@
 				3B70D3B320DA06C6007D2770 /* Frameworks */,
 				3B70D3B420DA06C6007D2770 /* Resources */,
 				A355FAE11FD13D448C87A188 /* [CP] Embed Pods Frameworks */,
+				3BC99D5020DBB46300E9F268 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,10 +350,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TSEncrypt/Pods-TSEncrypt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B70D3BC20DA06C6007D2770 /* ViewController.swift in Sources */,
-				3BC99D2B20DB4E9300E9F268 /* AES.swift in Sources */,
 				3B70D3BA20DA06C6007D2770 /* AppDelegate.swift in Sources */,
 				3BC99D2F20DB5FF200E9F268 /* TSMD5.swift in Sources */,
-				3BC99D2C20DB4E9300E9F268 /* SecrecyExtension.swift in Sources */,
 				3BC99D2720DB4BE100E9F268 /* TSEncryptHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +417,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B70D3CF20DA06C8007D2770 /* TSEncryptTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,7 +590,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.caiqr.paul.TSEncrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TSEncrypt/TSEncrypt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -612,7 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.caiqr.paul.TSEncrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "${SRCROOT}/CommonCrypto";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TSEncrypt/TSEncrypt-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

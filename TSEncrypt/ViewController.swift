@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+        let ss = TS_AES.Endcode_AES_CBC(strToEncode: "aaaaaa", key: "0e83c78e002c4107", iv: "0102030405060708")
+        print(ss)
         
         // Do any additional setup after loading the view, typically from a nib.
     }

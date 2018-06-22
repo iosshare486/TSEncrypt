@@ -7,7 +7,7 @@ target 'TSEncrypt' do
 
 
 pod 'SwiftyRSA'
-
+pod 'CryptoSwift'
     # Pods for TSEncrypt
 
   target 'TSEncryptTests' do

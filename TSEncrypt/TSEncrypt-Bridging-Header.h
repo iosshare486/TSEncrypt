@@ -9,8 +9,4 @@
 #ifndef TSEncrypt_Bridging_Header_h
 #define TSEncrypt_Bridging_Header_h
 
-#import <CommonCrypto/CommonCryptor.h>
-#import <CommonCrypto/CommonDigest.h>
-
-
 #endif /* TSEncrypt_Bridging_Header_h */

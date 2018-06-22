@@ -1,15 +1,15 @@
 //
-//  TSEncryptTests.swift
-//  TSEncryptTests
+//  TSEncryptFrameTests.swift
+//  TSEncryptFrameTests
 //
-//  Created by 彩球 on 2018/6/20.
+//  Created by 彩球 on 2018/6/21.
 //  Copyright © 2018年 caiqr. All rights reserved.
 //
 
 import XCTest
-@testable import TSEncrypt
+@testable import TSEncryptFrame
 
-class TSEncryptTests: XCTestCase {
+class TSEncryptFrameTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

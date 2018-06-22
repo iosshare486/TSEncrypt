@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyRSA
+import CryptoSwift
 
 
 public protocol TSEncryptCompatible {
@@ -67,12 +68,8 @@ public extension TSEncryptString {
     ///   - key: 解密 key
     ///   - iv: iv
     /// - Returns: 加密后数据
-    public func aesCBCEncrypt(key: String, iv: String?) -> String? {
-        guard let encryptData = self.base.aesCBCEncrypt(key, iv: iv) else {
-            debugPrint("encry error")
-            return nil
-        }
-        return encryptData.base64String
+    public func aesCBCEncrypt(key: String, iv: String) -> String? {
+        return TS_AES.Endcode_AES_CBC(strToEncode: self.base, key: key, iv: iv)
     }
     
     
@@ -114,6 +111,67 @@ public extension TSEncryptString {
     
     public func md5() -> String {
         return MD5(self.base)
+    }
+}
+
+
+class TS_AES: NSObject {
+    
+    //  MARK:  AES-CBC加密
+    class func Endcode_AES_CBC(strToEncode:String, key: String, iv: String) -> String? {
+        // 从String 转成data
+        let data = strToEncode.data(using: String.Encoding.utf8)
+        
+        guard data != nil else {
+            debugPrint("string to data is error")
+            return nil
+        }
+        // byte 数组
+        var encrypted: [UInt8] = []
+        let cbc_iv = CBC(iv: Array(iv.utf8))
+        let cbc_key = Array(key.utf8)
+        do {
+            encrypted = try AES(key: cbc_key, blockMode: cbc_iv, padding: .pkcs7).encrypt(data!.bytes)
+        } catch {
+            debugPrint("encrypt is error")
+        }
+        
+        let encoded =  Data(encrypted)
+        //加密结果要用Base64转码
+        return encoded.base64EncodedString()
+    }
+    
+    //  MARK:  AES-CBC解密
+    class func Decode_AES_CBC(strToDecode:String, key: String, iv: String)->String {
+        //decode base64
+        let data = NSData(base64Encoded: strToDecode, options: NSData.Base64DecodingOptions.init(rawValue: 0))
+        
+        // byte 数组
+        var encrypted: [UInt8] = []
+        let count = data?.length
+        
+        // 把data 转成byte数组
+        for i in 0..<count! {
+            var temp:UInt8 = 0
+            data?.getBytes(&temp, range: NSRange(location: i,length:1 ))
+            encrypted.append(temp)
+        }
+        // decode AES
+        var decrypted: [UInt8] = []
+        let cbc_iv = CBC(iv: Array(iv.utf8))
+        let cbc_key = Array(key.utf8)
+        do {
+            decrypted = try AES(key: cbc_key, blockMode: cbc_iv, padding: .pkcs7).decrypt(encrypted)
+        } catch {
+            debugPrint("decrypted is error")
+        }
+        
+        // byte 转换成NSData
+        let encoded = Data(decrypted)
+        var str = ""
+        //解密结果从data转成string
+        str = String(bytes: encoded.bytes, encoding: .utf8)!
+        return str
     }
 }
 
