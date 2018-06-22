@@ -14,13 +14,13 @@ import CryptoSwift
 public protocol TSEncryptCompatible {
     
     associatedtype Compatible
-    var ts: Compatible { get }
+    var ts_encrypt: Compatible { get }
     
 }
 
 extension String: TSEncryptCompatible {
     
-    public var ts: TSEncryptString {
+    public var ts_encrypt: TSEncryptString {
         get { return TSEncryptString(self) }
     }
 }
