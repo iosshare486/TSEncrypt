@@ -1,6 +1,9 @@
 # TSEncrypt
 
 
+
+
+
 ## Description
 
 数据简单加密与解密
@@ -8,7 +11,7 @@
 ## Function
 1. RSA私钥签名
 2. AES cbc模式加密
-3. encode & decode
+3. URL encode & decode
 4. Base64-encode & decode
 5. MD5
 
