@@ -15,7 +15,10 @@ class ViewController: UIViewController {
         
         
         let ss = TS_AES.Endcode_AES_CBC(strToEncode: "aaaaaa", key: "0e83c78e002c4107", iv: "0102030405060708")
-        print(ss)
+        
+        let encodeStr = "s/a=b+".ts_encrypt.urlEncoded()
+        
+        print(encodeStr)
         
         // Do any additional setup after loading the view, typically from a nib.
     }

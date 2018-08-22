@@ -94,12 +94,14 @@ public extension TSEncryptString {
     
     /// 将原始的url编码为合法的url
     public func urlEncoded() -> String {
-        let encodeUrlString = self.base.addingPercentEncoding(withAllowedCharacters:
-            .urlQueryAllowed)
+        if let encodeUrlString = self.base.addingPercentEncoding(withAllowedCharacters:
+            .urlQueryAllowed) {
+            let resultString = encodeUrlString.replacingOccurrences(of: "+", with: "%2b").replacingOccurrences(of: "/", with: "%2f").replacingOccurrences(of: "=", with: "%3d")
+            return resultString
+        } else {
+            return ""
+        }
         
-        let tmpString = encodeUrlString!.replacingOccurrences(of: "/", with: "%2f")
-        let resultString = (tmpString as NSString).replacingOccurrences(of: "+", with: "%2b")
-        return resultString
     }
     
     /// 将编码后的url转换回原始的url
