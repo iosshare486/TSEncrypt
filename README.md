@@ -29,6 +29,9 @@
 	// url Encode
 	ss.ts_encrypt.urlEncoded()
 	
+	// url Encode for Alamofire
+	ss.ts_encrypt.escapeForAlamofire()
+
 	// url Decode
 	ss.ts_encrypt.urlDecoded()
 	
