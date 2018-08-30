@@ -94,6 +94,7 @@ public extension TSEncryptString {
     
     /// 将原始的url编码为合法的url
     public func urlEncoded() -> String {
+        
         if let encodeUrlString = self.base.addingPercentEncoding(withAllowedCharacters:
             .urlQueryAllowed) {
             let resultString = encodeUrlString.replacingOccurrences(of: "+", with: "%2b").replacingOccurrences(of: "/", with: "%2f").replacingOccurrences(of: "=", with: "%3d")
@@ -101,8 +102,51 @@ public extension TSEncryptString {
         } else {
             return ""
         }
-        
     }
+    
+    /// 基于Alamofire 请求参数urlEncode
+    public func escapeForAlamofire() -> String {
+        let generalDelimitersToEncode = ":#[]@" // does not include "?" or "/" due to RFC 3986 - Section 3.4
+        let subDelimitersToEncode = "!$&'()*+,;="
+        
+        var allowedCharacterSet = CharacterSet.urlQueryAllowed
+        allowedCharacterSet.remove(charactersIn: "\(generalDelimitersToEncode)\(subDelimitersToEncode)")
+        
+        var escaped = ""
+        
+        //==========================================================================================================
+        //
+        //  Batching is required for escaping due to an internal bug in iOS 8.1 and 8.2. Encoding more than a few
+        //  hundred Chinese characters causes various malloc error crashes. To avoid this issue until iOS 8 is no
+        //  longer supported, batching MUST be used for encoding. This introduces roughly a 20% overhead. For more
+        //  info, please refer to:
+        //
+        //      - https://github.com/Alamofire/Alamofire/issues/206
+        //
+        //==========================================================================================================
+        
+        if #available(iOS 8.3, *) {
+            escaped = self.base.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? self.base
+        } else {
+            let batchSize = 50
+            var index = self.base.startIndex
+            
+            while index != self.base.endIndex {
+                let startIndex = index
+                let endIndex = self.base.index(index, offsetBy: batchSize, limitedBy: self.base.endIndex) ?? self.base.endIndex
+                let range = startIndex..<endIndex
+                
+                let substring = self.base[range]
+                
+                escaped += substring.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? String(substring)
+                
+                index = endIndex
+            }
+        }
+        
+        return escaped
+    }
+    
     
     /// 将编码后的url转换回原始的url
     public  func urlDecoded() -> String {
