@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "TSEncrypt"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "encrypt for string"
   s.description  = <<-DESC
                    加密工具类. 支持(AES RSA Base64 MD5 Url)
