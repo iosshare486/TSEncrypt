@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
 
 
   s.requires_arc = true
-  s.dependency "SwiftyRSA"
-  s.dependency "CryptoSwift"
+  s.dependency "SwiftyRSA", '~> 1.4.0'
+  s.dependency "CryptoSwift", '~> 0.11.0'
 end
