@@ -1,8 +1,8 @@
 PODS:
-  - CryptoSwift (0.10.0)
-  - SwiftyRSA (1.4.0):
-    - SwiftyRSA/ObjC (= 1.4.0)
-  - SwiftyRSA/ObjC (1.4.0)
+  - CryptoSwift (0.12.0)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
 
 DEPENDENCIES:
   - CryptoSwift
@@ -14,9 +14,9 @@ SPEC REPOS:
     - SwiftyRSA
 
 SPEC CHECKSUMS:
-  CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
-  SwiftyRSA: 601e4585fece2c6c50ae93a67c77cc2426e55cb2
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
 
 PODFILE CHECKSUM: c65fbe85f0de8b15df8e2d8cb93e5387f5de86b7
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2

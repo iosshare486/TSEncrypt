@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "TSEncrypt"
-  s.version      = "1.0.3"
+  s.version      = "2.0.0"
   s.summary      = "encrypt for string"
   s.description  = <<-DESC
                    加密工具类. 支持(AES RSA Base64 MD5 Url)
@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
 
 
   s.requires_arc = true
-  s.dependency "SwiftyRSA", '~> 1.4.0'
-  s.dependency "CryptoSwift", '~> 0.11.0'
+  s.dependency "SwiftyRSA", '~> 1.5.0'
+  s.dependency "CryptoSwift", '~> 0.12.0'
 end
